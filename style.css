@@ -1,0 +1,297 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&family=Raleway:ital,wght@0,300;1,200;1,300&display=swap');
+
+
+*{
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+ font-family: 'Exo', sans-serif;;
+ text-decoration: none;
+color: white;
+}
+
+body{
+ font-family: 'Raleway', sans-serif;
+ background-color: black;
+}
+.container{
+ margin-right: 8rem;
+ margin-left: 8rem;
+}
+.header{
+ height: 60px;
+ display: flex;
+ position: sticky;
+ top: 0;
+ background-color: black;
+ align-items: center;
+ justify-content: space-between;
+}
+.header a{
+ color: white;
+ 
+}
+.container_backimg{
+ background-image: url("car4.jpg");
+ width: 100%;
+ height: 300px;
+ background-repeat: no-repeat;
+ background-image: cover;
+}
+.featured h1{
+text-align: center;
+margin-top: 80px;
+}
+.line{
+ width: 100px;
+ height: 2px;
+ background-color: aqua;
+ color: #b8aeaecf;
+ text-align: center;
+
+margin: auto;
+}
+nav{
+display: flex;
+height: 60px;
+align-items:center ; 
+ 
+}
+nav ul li{
+ float: left;
+ margin-left: 25px;
+}
+.logo a{
+ font-size: 25px;
+ font-weight: 600;
+ letter-spacing: 1px;
+}
+nav a{
+ 
+ font-weight: 600;
+ font-size: 18px;
+ transition: 0.5s;
+}
+.close i{
+ color: aliceblue;
+ display: none;
+}
+.nave_toggle{
+ display: none;
+}
+nav ul li a:hover{
+ color: crimson;
+}
+main{
+ color: white;
+}
+.home_car i{
+ color: aliceblue;
+}
+
+main{
+ width: 100%;
+ text-align: center;
+ z-index: -999;
+ display: flex;
+ flex-direction: column;
+
+align-items: center; justify-content: center;
+ height: 80vh;
+}
+.home_car{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+.home_car_data{
+ padding: 50px;
+ 
+}
+main img{
+ margin-top: 50px;
+}
+main h1{
+ margin-top: 50px;
+}
+main h3{
+ color: gray;
+}
+.start a{
+ padding: 30px;
+ color: white;
+ border: 5px solid green;
+ border-radius: 50px;
+ font-size: 22px;
+ font-weight: 600;
+ box-shadow: 0 0 12px hsl(158 98% 43%);
+}
+main h3{
+ margin-top: 5px;
+}
+.about{
+
+ color: white;
+}
+.about h1{
+ text-align: center;
+ margin-top: 100px;
+ 
+}
+.card{
+ background-color: #b8aeaecf;
+ width: fit-content;
+ padding: 10px;
+ position: relative;
+ bottom: 25px;
+ left:100px;
+ border-top-right-radius: 30px;
+border-bottom-left-radius:30px ;
+}
+.card p{
+ font-size: 12px;
+}
+
+.right{
+ width: 500px;
+}
+.right h2{
+ font-size: 25px;
+ margin: 20px 0;
+}
+.right p{
+ margin-bottom: 20px;
+}
+.about_container{
+ display: flex;
+ flex-wrap: wrap;
+ margin-top: 80px;
+ 
+align-items: center;
+ justify-content: space-around;
+}
+.popular{
+ color: white;
+ position:static;
+}
+.line2{
+ margin-bottom: 70px;
+}
+.right a{
+ padding: 7px 10px;
+ border: 2px solid green;
+ color: white;
+ border-radius: 10px;
+}
+.popular h1{
+ margin-top: 80px;
+ text-align: center;
+}
+.car_car_price{
+ width: 250px;
+ text-align: center;
+ height: 280px;
+ padding: 20px;
+ margin: 10px;
+
+ box-sizing: border-box;
+ border: 1px solid red;
+}
+.popular h2{
+ margin-bottom: 20px;
+ text-align: center;
+}
+.card_container{
+ display: flex;
+ flex-wrap: wrap;
+
+ justify-content: center;
+}
+.car_car_price img{
+ width: 200px;
+ height: 100px;
+}
+@media(max-width:900px){
+
+  .container{
+   margin-left: 2rem;
+   margin-right: 2rem;
+  }
+  
+main h1{
+ 
+}
+
+.home_car_data{
+ padding: 20px;
+ 
+}
+.close i{
+ display: block;
+ color: white;
+ font-size: 35px;
+ position: absolute;
+ right: 2rem;
+ top :10px;
+ font-weight: 600;
+}
+.nave_toggle{
+ display: block;
+ color: white;
+font-size: 22px;
+}
+nav ul li{
+ float: none;
+}
+
+ .header{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+ }
+ nav ul{
+  position: fixed;
+  background-color: red;
+ 
+ top: 0;
+ left: -100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+ width: 100%;
+ height: 100vh;
+ text-align: center;
+ transition: 0.4s;
+ z-index: 999;
+ }
+ .main{
+  position: fixed;
+  left: 0;
+  top:0
+ }
+ .main2{
+  position: fixed;
+  left: -100%;
+  top:0
+ }
+ 
+ nav ul li{
+  margin: 20px 0;
+  
+ }
+ nav ul a{
+  font-size: 32px;
+ }
+ .start{
+  margin-top: 50px;
+  
+  
+ }
+ .start a{
+  padding:30px 20px;
+  border-radius:50px;
+ }
+}
